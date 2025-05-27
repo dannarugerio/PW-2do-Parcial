@@ -41,7 +41,7 @@ h1 {
   max-width: 200px;
   border-radius: 50%;
   overflow: hidden;
-  background-color:rosybrown;
+  background-color:mistyrose;
 } 
 
 .pokemon-name {
@@ -66,7 +66,7 @@ h1 {
   border-radius: 0.4em;
   font-size: .75em;
   color: black;
-  background-color: darksalmon;
+  background-color:mistyrose;
 }
 
 .pokemon-type {
@@ -75,5 +75,32 @@ h1 {
   padding-right: .75em;
   border-radius: 1.6em;
   color: white;
-  background-color: black;
+  background-color:darkred;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5em;
+  }
+  .pokemon {
+    padding: 1.2em;
+    gap: .75em;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .2em;
+  }
+  .pokemon {
+    padding: 1em;
+    gap: .5em;
+  }
+  .pokemon-powers {
+    gap: .2em;
+  }
 }
