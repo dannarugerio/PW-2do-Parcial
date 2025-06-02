@@ -12,18 +12,18 @@ body {
 
 h1 {
   text-align: center;
-  margin: 1em;
+  margin: 1em 0;
   color: darkred; 
 }
 
 .container {
   display: grid;
-  width: 1440px; 
   grid-template-columns: repeat(3, 1fr); 
   gap: 1em;
   padding: 1em;
   border-radius: 1em;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px; 
 }
 
 .pokemon {
@@ -50,9 +50,18 @@ h1 {
   color: whitesmoke;
 }
 
+.pokemon-type {
+  padding: .5em .75em;
+  border-radius: 1.6em;
+  color: white;
+  background-color:darkred;
+}
+
 .pokemon-description {
   line-height: 1.36em;
+  text-align: center;
 }
+ 
 
 .pokemon-powers {
   display: flex;
@@ -69,18 +78,9 @@ h1 {
   background-color:mistyrose;
 }
 
-.pokemon-type {
-  padding: .5em;
-  padding-left: .75em;
-  padding-right: .75em;
-  border-radius: 1.6em;
-  color: white;
-  background-color:darkred;
-}
 
 @media screen and (max-width: 1023px) {
   .container {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0.5em;
   }
@@ -92,7 +92,6 @@ h1 {
 
 @media screen and (max-width: 435px) {
   .container {
-    display: grid;
     grid-template-columns: 1fr;
     padding: .2em;
   }
